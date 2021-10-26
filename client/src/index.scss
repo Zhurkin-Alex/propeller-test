@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container{
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  &__box{
+    margin-top: 38px;
+  }
+}
+.header{
+  max-width: 275px;
+  margin: 0 auto ;
+  text-align: center;
+  padding-top:15px ;
+}
+.question{
+  text-align: center;
+  margin-top: 20%;
+
+  &__gender-box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 25px;
+    p{
+      padding: 15px;
+      background: #00f0ff;
+      cursor: pointer;
+    }
+  }
+
+  &__city-box{
+    margin-top: 25px;
+  }
+
+}
+.form{
+  margin-top: 250px;
+  &__box{
+    max-width: 425px;
+    margin: 0 auto;
+  }
+  &__email{
+    padding: 10px;
+    width: 94%;
+  }
+  &__textarea{
+    padding: 10px;
+    width: 94%;
+    margin-top: 8px;
+  }
+  &__email::placeholder{
+    padding: 10px;
+  }
+  &__textarea::placeholder{
+    padding: 10px;
+  }
+  &__btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    input{
+      padding: 10px;
+    }
+    
+  }
+}
+.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #00e7ff;
+    &__nav{
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none; 
+      padding: 10px 0;
+      
+    }
+    &__link{
+      text-decoration: none;
+      color: #000;
+    }
+}
+Link{
+  text-decoration: none;
+  list-style-type: none;
+}
+.cart{
+  max-width: 450px;
+  margin: 63px auto 0;
+  &__box{
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  &__iteam{
+    margin-top: 8px;
+  }
+  &__btn{
+    margin-top: 30px;
+    text-align: center;
+    button{
+      padding: 10px;
+    }
+  }
+}
+
+// @media  (min-width: 425px){
+
+//   .form{
+//     margin-top: 350px;
+//   }
+// }
+@media  (min-width: 768px){
+
+  .form{
+    width: 500px;
+    margin: 350px auto 0;
+    text-align: center;
+    &__email{
+      width: 350px
+    }
+    &__textarea{
+      width: 350px;
+    }
+    &__btn{
+      width: 370px;
+      margin: 0 auto;
+    }
+  }
+}
